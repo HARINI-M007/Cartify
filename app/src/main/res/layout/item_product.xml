@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Product Image -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"/>
+
+            <!-- Wishlist -->
+
+            <ImageView
+                android:id="@+id/imgWishlist"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:background="@android:color/white"
+                android:padding="5dp"
+                android:src="@drawable/ic_favorite"/>
+
+            <!-- Discount Badge -->
+
+            <TextView
+                android:id="@+id/txtDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:layout_margin="8dp"
+                android:background="#E91E63"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:text="50% OFF"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+        </FrameLayout>
+
+        <!-- Product Name -->
+
+        <TextView
+            android:id="@+id/txtProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="10dp"
+            android:text="Kurti"
+            android:textColor="#111111"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <!-- Rating -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐ 4.6"
+                android:textColor="#4CAF50"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!-- Price -->
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:paddingStart="10dp"
+            android:text="₹499"
+            android:textColor="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Free Delivery -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text="🚚 Free Delivery"
+            android:textColor="#666666"
+            android:textSize="12sp"/>
+
+        <!-- Add To Cart -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddCart"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:text="Add to Cart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:backgroundTint="#E91E63"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
