@@ -24,13 +24,13 @@ Cartify is a modern Android shopping application developed using Java in Android
 ![Login](screenshots/login.png)
 
 ### Home Screen
-![Home](screenshots/home.png)
+![Home](screenshots/home.png.jpeg)
 
 ### Cart Screen
-![Cart](screenshots/cart.png)
+![Cart](screenshots/cart.png.jpeg)
 
 ### Profile Screen
-![Profile](screenshots/profile.png)
+![Profile](screenshots/profile.png.jpeg)
 
 
 ## 🚀 Installation
